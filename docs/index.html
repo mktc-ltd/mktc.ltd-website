@@ -1,7 +1,144 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="mktc — digital solutions and consulting for a real change.">
+  <title>mktc — Digital solutions for a real change.</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-mktc.ltd
+  <header class="site-header" aria-label="Primary">
+    <a class="brand" href="#home" aria-label="mktc home">
+      <span class="brand-name">mktc</span>
+      <span class="brand-tagline">Digital solutions for a real change.</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#ai">AI</a>
+      <a href="#cloud">Cloud</a>
+      <a href="#development">Development</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <aside class="section-nav" aria-label="Section navigation">
+    <button class="section-dot active" data-target="home" aria-label="Home"><span>Home</span></button>
+    <button class="section-dot" data-target="ai" aria-label="AI"><span>AI</span></button>
+    <button class="section-dot" data-target="cloud" aria-label="Cloud"><span>Cloud</span></button>
+    <button class="section-dot" data-target="development" aria-label="Software development"><span>Development</span></button>
+    <button class="section-dot" data-target="contact" aria-label="Contact us"><span>Contact</span></button>
+  </aside>
+
+  <main id="snap-scroller">
+    <section id="home" class="snap-section hero-section" data-index="0">
+      <div class="section-bg" style="background-image:url('assets/00-top.webp')"></div>
+      <div class="hero-copy content-box">
+        <p class="eyebrow">mktc</p>
+        <h1>Ideas<br>into impact.</h1>
+        <p class="lead">Digital solutions and consulting<br>for a smarter, fairer tomorrow.</p>
+        <a class="pill-button dark" href="#contact">Explore our services <span>→</span></a>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="mouse-icon">⇩</span>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <section id="ai" class="snap-section split-section left-copy" data-index="1">
+      <div class="section-bg" style="background-image:url('assets/01-ai.webp')"></div>
+      <div class="content-box section-copy">
+        <div class="section-number">01 <i></i></div>
+        <h2>AI</h2>
+        <h3>Turn possibility into progress.</h3>
+        <p>We help organisations harness the power of artificial intelligence to solve real-world problems — from strategy and use case identification to building and deploying custom AI solutions.</p>
+        <ul>
+          <li><span>◈</span>AI strategy and advisory</li>
+          <li><span>▣</span>Custom AI solutions</li>
+          <li><span>▥</span>Data preparation and model training</li>
+          <li><span>◉</span>Responsible and explainable AI</li>
+        </ul>
+        <a class="pill-button outline" href="#contact">Explore AI <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="cloud" class="snap-section split-section right-copy" data-index="2">
+      <div class="section-bg" style="background-image:url('assets/02-cloud.webp')"></div>
+      <div class="content-box section-copy">
+        <div class="section-number">02 <i></i></div>
+        <h2>Cloud</h2>
+        <h3>Built for what's next.</h3>
+        <p>We design, secure and optimise cloud platforms that are robust, scalable and cost-effective — helping you move faster and go further.</p>
+        <ul>
+          <li><span>⌁</span>Cloud strategy and migration</li>
+          <li><span>◇</span>Infrastructure modernisation</li>
+          <li><span>▧</span>Security and compliance</li>
+          <li><span>◌</span>Cost optimisation</li>
+          <li><span>♧</span>Managed services and support</li>
+        </ul>
+        <a class="pill-button outline" href="#contact">Explore Cloud <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="development" class="snap-section split-section left-copy" data-index="3">
+      <div class="section-bg" style="background-image:url('assets/04-swdev.webp')"></div>
+      <div class="content-box section-copy">
+        <div class="section-number">03 <i></i></div>
+        <h2>Software<br>development</h2>
+        <h3>Solutions that make a difference.</h3>
+        <p>We design and build secure, scalable and people-centred software solutions that solve real problems and create lasting value. From web applications to complex systems, we help you turn ideas into impact.</p>
+        <ul>
+          <li><span>♧</span>Custom software development</li>
+          <li><span>◈</span>UX/UI design and product strategy</li>
+          <li><span>⌁</span>API and system integration</li>
+          <li><span>⌘</span>Performance and optimisation</li>
+        </ul>
+        <a class="pill-button outline" href="#contact">Explore development <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="contact" class="snap-section contact-section" data-index="4">
+      <div class="section-bg" style="background-image:url('assets/05-contact-us.webp')"></div>
+      <div class="contact-layout">
+        <div class="content-box contact-copy">
+          <div class="section-number">04 <i></i></div>
+          <h2>Contact us</h2>
+          <h3>Let's build a better next, together.</h3>
+          <p>Have a question, a project in mind, or just want to say hello? We'd love to hear from you. Fill out the form and we'll be in touch soon.</p>
+          <div class="contact-details">
+            <div><span>⌖</span>London, UK</div>
+            <div><span>⌕</span>+44 20 7123 4567</div>
+            <div><span>↗</span>hello@mktc.co.uk</div>
+          </div>
+        </div>
+        <form class="contact-form content-box" action="#" method="post">
+          <div class="form-row">
+            <label>Name<span>*</span><input name="name" autocomplete="name" placeholder="Your name" required></label>
+            <label>Email<span>*</span><input type="email" name="email" autocomplete="email" placeholder="yourname@company.com" required></label>
+          </div>
+          <label>Message subject<span>*</span><input name="subject" placeholder="e.g. Project enquiry" required></label>
+          <label>Your message<span>*</span><textarea name="message" rows="5" placeholder="Tell us a bit about your project or enquiry..." required></textarea></label>
+          <button class="pill-button dark submit-button" type="submit">Send message <span>→</span></button>
+          <small>We'll aim to respond within 2 business days.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>mktc</strong>
+      <span>Digital solutions for a real change.</span>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#ai">AI</a><a href="#cloud">Cloud</a><a href="#development">Development</a><a href="#contact">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 mktc. All rights reserved.</span>
+      <span>Privacy&nbsp;&nbsp; Terms&nbsp;&nbsp; Cookies&nbsp;&nbsp; Accessibility</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
